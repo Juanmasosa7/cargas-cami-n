@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Carga de Camión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simulador de Carga de Camión</h1>
+
+    <div class="inputs">
+        <div>
+            <label for="truckWidth">Ancho:</label>
+            <input type="number" id="truckWidth" min="1" value="400">
+            <select id="truckWidthUnit">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+
+            <label for="truckLength">Largo:</label>
+            <input type="number" id="truckLength" min="1" value="200">
+            <select id="truckLengthUnit">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+
+            <button id="setDimensions">Establecer Dimensiones</button>
+        </div>
+
+        <div>
+            <label for="boxWidth">Ancho:</label>
+            <input type="number" id="boxWidth" min="1" value="200">
+            <select id="boxWidthUnit">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+
+            <label for="boxLength">Largo:</label>
+            <input type="number" id="boxLength" min="1" value="100">
+            <select id="boxLengthUnit">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+
+            <button id="addBox">Añadir Caja</button>
+        </div>
+    </div>
+
+    <h2>Cajas Disponibles</h2>
+
+    <div id="truck-container">
+        <div id="truck-area"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

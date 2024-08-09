@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #d2d5f7;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+.inputs div {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+input {
+    margin-right: 5px;
+    padding: 5px;
+    width: 80px;
+}
+
+select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#truck-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%; /* Asegura que no exceda el ancho de la pantalla */
+}
+
+#truck-area {
+    background-color: #5a85ff;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box; /* Asegura que el tamaño del área del camión sea consistente */
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: #000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: move;
+    box-sizing: border-box; /* Asegura que el tamaño de las cajas sea consistente */
+}
+
+.box.dragging {
+    opacity: 0.7;
+}
